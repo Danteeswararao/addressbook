@@ -30,17 +30,6 @@
 			<name>Snapshots</name>
       			<url>http://ec2-18-219-105-187.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/snapshots/</url>
     		</snapshotRepository>
- 		<snapshotRepository>
-			<id>${env.ART_ID}</id>
-			<name>${env.ART_NAME}</name>
-			<url>${env.ART_URL}</url>
-		</snapshotRepository>
-		<repository>
-		<id>${env.REL_ART_ID}</id>
-			<name>${env.REL_ART_NAME}</name>
-			<url>${env.REL_ART_URL}</url>
-		</repository>
-
 	</distributionManagement>
 	
 

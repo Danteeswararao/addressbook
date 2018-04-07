@@ -21,18 +21,17 @@
     </properties>
 	
 		<distributionManagement>
-		<snapshotRepository>
-			<id>${env.ART_ID}</id>
-			<name>${env.ART_NAME}</name>
-			<url>${env.ART_URL}</url>
-		</snapshotRepository>
 		<repository>
-		<id>${env.REL_ART_ID}</id>
-			<name>${env.REL_ART_NAME}</name>
-			<url>${env.REL_ART_URL}</url>
-		</repository>
-
-	</distributionManagement>
+      			<id>releases</id>
+			<name>Releases</name>
+      			<url>http://ec2-18-219-105-187.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/releases/</url>
+    		</repository>
+    		<snapshotRepository>
+      			<id>snapshots</id>
+			<name>Snapshots</name>
+      			<url>http://ec2-18-219-105-187.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/snapshots/</url>
+    		</snapshotRepository>
+		</distributionManagement>
 	    <scm>
         <connection>scm:git:git@github.com:${github.account}/addressbook.git</connection>
         <developerConnection>scm:git:git@github.com:${github.account}/addressbook.git</developerConnection>
